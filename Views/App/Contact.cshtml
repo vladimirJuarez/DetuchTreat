@@ -1,0 +1,31 @@
+@model DutchTreat.ViewModels.ContactViewModel
+@{
+    ViewBag.Title = "HI";
+}
+@section Scripts{
+    <script src="~/node_modules/jquery-validation/dist/jquery.validate.min.js"></script>
+    <script src="~/node_modules/jquery-validation-unobtrusive/dist/jquery.validate.unobtrusive.min.js"></script>
+}
+
+<div id="theForm">
+    <form method="post">
+        <div asp-validation-summary="ModelOnly"></div>
+        <label asp-for="Name">Your Name:</label>
+        <input asp-for="Name"/>
+        <span asp-validation-for="Name"></span>
+
+        <label asp-for="Email">Email:</label>
+        <input type="email" asp-for="Email"/>
+        <span asp-validation-for="Email"></span>
+        
+        <label asp-for="Subject">Subject:</label>
+        <input type="text" asp-for="Subject">
+        <span asp-validation-for="Subject"></span>
+        
+        <label asp-for="Message">Message:</label>
+        <textarea rows="4" asp-for="Message"></textarea>
+        <span asp-validation-for="Message"></span>
+        <input type="submit" value="Send Message"/>
+        <div>@ViewBag.UserMessage</div>        
+    </form>
+</div>

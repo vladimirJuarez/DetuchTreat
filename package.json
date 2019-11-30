@@ -1,0 +1,19 @@
+{
+  "name": "DutchTreat",
+  "version": "1.0.0",
+  "description": "",
+  "dependencies": {
+    "jquery": "3.4.1",
+    "bootstrap": "4.3.1",
+    "jquery-validation": "^1.17.0",
+    "jquery-validation-unobtrusive": "^3.2.10"
+  },
+  "devDependencies": {},
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

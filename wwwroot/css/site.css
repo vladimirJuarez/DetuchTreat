@@ -1,0 +1,46 @@
+body{
+    background-color: gainsboro;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;    
+}
+
+#theForm{
+    background-color: bisque;
+    width: 400px;
+    margin: 10px;
+    padding: 5px;
+    border-radius: 5px;
+}
+#theForm label{
+    margin: 10px;
+}
+#theForm input{
+    display: block;
+}
+
+#theForm input[type=submit]{
+    width: auto;
+}
+
+#theForm input{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 18px;
+    border-radius: 5px;
+    margin: 10px;
+}
+.product-props{
+    list-style-type: none;    
+}
+.product-info{
+    background-color: burlywood;
+    display: inline-block;
+    width: 400px;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 5px;
+}
+
+.product-info img{
+    max-width: 150px;
+    padding: 5px;
+    float: left;
+}
