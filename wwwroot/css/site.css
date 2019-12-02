@@ -1,4 +1,7 @@
-body{
+header{
+    background-color: gray;
+}
+/*body{
     background-color: gainsboro;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;    
 }
@@ -43,4 +46,4 @@ body{
     max-width: 150px;
     padding: 5px;
     float: left;
-}
+}*/

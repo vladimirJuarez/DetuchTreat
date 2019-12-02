@@ -1,0 +1,5 @@
+# ignore debug files
+/bin/Debug/netcoreapp3.0/
+
+#ignore obj files
+/obj/
