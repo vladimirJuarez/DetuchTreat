@@ -45,26 +45,28 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\vjuarez\\.nuget\\packages\\": {}
+    "/Users/vladimir/.nuget/packages/": {},
+    "/usr/local/share/dotnet/sdk/NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\software\\projects\\net\\csharp\\practice\\DutchTreat\\DutchTreat.csproj",
+      "projectUniqueName": "/Users/vladimir/Projects/DotNet/DotnetCourse/DetuchTreat/DutchTreat.csproj",
       "projectName": "DutchTreat",
-      "projectPath": "C:\\software\\projects\\net\\csharp\\practice\\DutchTreat\\DutchTreat.csproj",
-      "packagesPath": "C:\\Users\\vjuarez\\.nuget\\packages\\",
-      "outputPath": "C:\\software\\projects\\net\\csharp\\practice\\DutchTreat\\obj\\",
+      "projectPath": "/Users/vladimir/Projects/DotNet/DotnetCourse/DetuchTreat/DutchTreat.csproj",
+      "packagesPath": "/Users/vladimir/.nuget/packages/",
+      "outputPath": "/Users/vladimir/Projects/DotNet/DotnetCourse/DetuchTreat/obj/",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
+      ],
       "configFilePaths": [
-        "C:\\Users\\vjuarez\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "/Users/vladimir/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp3.0"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -104,7 +106,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.100-preview3-014645\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/3.0.100/RuntimeIdentifierGraph.json"
       }
     }
   }
