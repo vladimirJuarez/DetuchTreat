@@ -1,28 +1,27 @@
 {
   "format": 1,
   "restore": {
-    "/Users/vladimir/Projects/DotNet/DotnetCourse/DetuchTreat/DutchTreat.csproj": {}
+    "C:\\software\\projects\\net\\csharp\\practice\\DutchTreat\\DutchTreat.csproj": {}
   },
   "projects": {
-    "/Users/vladimir/Projects/DotNet/DotnetCourse/DetuchTreat/DutchTreat.csproj": {
+    "C:\\software\\projects\\net\\csharp\\practice\\DutchTreat\\DutchTreat.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/vladimir/Projects/DotNet/DotnetCourse/DetuchTreat/DutchTreat.csproj",
+        "projectUniqueName": "C:\\software\\projects\\net\\csharp\\practice\\DutchTreat\\DutchTreat.csproj",
         "projectName": "DutchTreat",
-        "projectPath": "/Users/vladimir/Projects/DotNet/DotnetCourse/DetuchTreat/DutchTreat.csproj",
-        "packagesPath": "/Users/vladimir/.nuget/packages/",
-        "outputPath": "/Users/vladimir/Projects/DotNet/DotnetCourse/DetuchTreat/obj/",
+        "projectPath": "C:\\software\\projects\\net\\csharp\\practice\\DutchTreat\\DutchTreat.csproj",
+        "packagesPath": "C:\\Users\\vjuarez\\.nuget\\packages\\",
+        "outputPath": "C:\\software\\projects\\net\\csharp\\practice\\DutchTreat\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "/Users/vladimir/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\vjuarez\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -62,7 +61,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/3.0.100/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.100-preview3-014645\\RuntimeIdentifierGraph.json"
         }
       }
     }
