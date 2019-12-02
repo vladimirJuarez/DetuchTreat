@@ -3,3 +3,4 @@
 
 #ignore obj files
 /obj/
+/obj/Debug/netcoreapp3.0/DutchTreat.csprojAssemblyReference.cache
