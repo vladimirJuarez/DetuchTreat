@@ -1,6 +1,8 @@
 # ignore debug files
-/bin/Debug/netcoreapp3.0/
+bin/*
+#/bin/Debug/netcoreapp3.0/
 
 #ignore obj files
-/obj/
-/obj/Debug/netcoreapp3.0/DutchTreat.csprojAssemblyReference.cache
+obj/*
+
+#/obj/Debug/netcoreapp3.0/DutchTreat.csprojAssemblyReference.cache
