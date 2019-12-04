@@ -1,0 +1,7 @@
+@model IEnumerable<DutchTreat.Data.Entities.Product>
+<h1></h1>
+<p>Count: @Model.Count()</p>
+@foreach (var p in Model)
+{
+    <li>@p.Title</li>
+}
