@@ -17,7 +17,7 @@ namespace DutchTreat
         public static void Main(string[] args)
         {
             var host = BuildWebHost(args);
-            SeedDb(host);
+            //SeedDb(host);
             host.Run();
         }
 
