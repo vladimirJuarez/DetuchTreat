@@ -1,0 +1,10 @@
+{
+    "Colors": {
+        "Favorite": "blue"
+    },
+    "ConnectionStrings": {
+        "DutchConnectionString": "Data Source=(localdb)\\MSSQLLocalDB;Initial Catalog=DutchTreatDb;Integrated Security=True;Connect Timeout=30;MultipleActiveResultSets=true;",
+        "Default": "Information",
+        "Microsoft": "Warning"
+    }
+}
