@@ -3,7 +3,9 @@
         "Favorite": "blue"
     },
     "ConnectionStrings": {
-        "DutchSqliteConnectionString": "Filename=./Data/DB/DutchTreatSqlite.db",
-        "DutchConnectionString": "Data Source=(localdb)\\MSSQLLocalDB;Initial Catalog=DutchTreatDb;Integrated Security=True;Connect Timeout=30;MultipleActiveResultSets=true;"
+        "DutchSqliteConnectionString": "Filename=./Data/DB/DutchTreatSqlite.db",        
+        "DutchConnectionString": "Data Source=(localdb)\\MSSQLLocalDB;Initial Catalog=DutchTreatDb;Integrated Security=True;Connect Timeout=30;MultipleActiveResultSets=true;",
+        "Default": "Information",
+        "Microsoft": "Warning"
     }
 }
