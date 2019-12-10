@@ -8,6 +8,8 @@ using Microsoft.Extensions.Logging;
 namespace DutchTreat.Controllers
 {
     [Route("api/[Controller]")]
+    [ApiController]
+    [Produces("application/json")]
     public class ProductsController: Controller
     {
         private readonly IDutchRepository _repository;
@@ -20,16 +22,18 @@ namespace DutchTreat.Controllers
         }
 
         [HttpGet]
-        public IEnumerable<Product> Get()
+        [ProducesResponseType(200)]
+        [ProducesResponseType(400)]
+        public ActionResult<IEnumerable<Product>> Get()
         {
             try
             {
-                return _repository.GetAllProducts();   
+                return Ok(_repository.GetAllProducts());   
             }
             catch(Exception ex)
             {                
                 _logger.LogError($"Failed to get products {ex}");
-                return null;
+                return BadRequest("Failed to get products");
             }            
         }
 

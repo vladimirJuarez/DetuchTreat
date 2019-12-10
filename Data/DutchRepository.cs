@@ -2,12 +2,14 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using DutchTreat.Data.Entities;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
 
 namespace DutchTreat.Data
 {
     public class DutchRepository : IDutchRepository
     {
+        
         private readonly DutchContext _context;
         public ILogger<Product> _logger { get; }
 
@@ -43,6 +45,25 @@ namespace DutchTreat.Data
         public bool SaveAll()
         {
             return _context.SaveChanges() > 0;
+        }
+
+        public IEnumerable<Order> GetAllOrders()
+        {
+            return _context.Orders
+                    .Include(o => o.Items)
+                    .ThenInclude(o => o.Product)
+                    .ToList();
+        }
+
+        public Order GetOrderById(int id)
+        {
+            return _context.Orders
+                    .FirstOrDefault(o => o.Id == id);
+        }
+
+        public void AddEntity(object model)
+        {
+            _context.Add(model);
         }
     }
 }
