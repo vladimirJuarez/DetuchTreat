@@ -1,19 +1,18 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using DutchTreat.Data;
 using DutchTreat.Services;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.Http;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using Newtonsoft.Json;
+using Microsoft.AspNetCore.Mvc.NewtonsoftJson;
+using System.Reflection;
+using AutoMapper;
 
 namespace DutchTreat
-{
+{ 
     public class Startup
     {
         private readonly IConfiguration _config;
@@ -30,11 +29,17 @@ namespace DutchTreat
                 //cfg.UseSqlServer(_config.GetConnectionString("DutchConnectionString"));
             });
 
-            //services.AddTransient<DutchSeeder>();            
+            //services.AddTransient<DutchSeeder>();       
+            //support for real mail service     
             services.AddTransient<IMailService, NullMailService>();
+            // services.AddAutoMapper();
+            services.AddAutoMapper(Assembly.GetExecutingAssembly());
             services.AddScoped<IDutchRepository, DutchRepository>();
-            //support for real mail service
-            services.AddMvc(option => option.EnableEndpointRouting = false);
+            services.AddMvc(option => option.EnableEndpointRouting = false)
+            .AddNewtonsoftJson(options =>
+                options.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore);
+
+            //.SetCompatibilityVersion(Microsoft.AspNetCore.Mvc.CompatibilityVersion);
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
