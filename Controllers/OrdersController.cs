@@ -23,14 +23,14 @@ namespace DutchTreat.Controllers
             _logger = logger;
             _mapper = mapper;
         }
-
-        [HttpGet]
-        public IActionResult Get()
+        
+        public IActionResult Get(bool includeItems = true)
         {
             try
             {
-                _logger.LogInformation("");
-                return Ok( _repository.GetAllOrders());
+                _logger.LogInformation("Getting all orders");
+                var results = _repository.GetAllOrders(includeItems);
+                return Ok(results);
             }
             catch (System.Exception ex)
             {
